@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+
 body{
   padding:50px;
   background: #000000;
@@ -69,7 +72,7 @@ body{
       position: relative;
       font: normal 40px Varela Round, sans-serif;
       height: 40px;
-	   left: 0;
+	     left: 0;
 	    letter-spacing: 5px;
 	    margin: 0px 0 0 0;
       color:#ffff;
@@ -131,6 +134,7 @@ color: hsla(0, 0%, 0%, .9);
   position: relative;
   text-align: center;
   color: #ffff;
+  margin: 30px;
  font: 40px "";
 
 }
@@ -142,7 +146,7 @@ color: hsla(0, 0%, 0%, .9);
 .div6 {
   color: #ffff;
  font: 40px "Roboto Condensed";
-   margin-bottom: auto;
+  margin: 30px;
 text-align: center;
 
 
@@ -181,6 +185,8 @@ text-align: center;
   position: relative;
   font: 40px "Monserrat";
   color:#ffff;
+    margin: 30px;
+
   text-align: center;
   color:#ffff;
   font-weight:700;
@@ -319,6 +325,15 @@ position: relative;
       animation-delay: 1.8s;
     }
   }
+}
+
+.div13{
+
+  color:#fff;
+  text-align: center;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  margin: 10px 20px; 
+
 }
 
 @keyframes dash {
