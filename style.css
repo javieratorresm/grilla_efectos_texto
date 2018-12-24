@@ -1,0 +1,475 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body{
+  padding:50px;
+  background: #000000;
+
+
+}
+
+.grid{
+  display: grid;
+  width: 100%;
+  max-width: 850px;
+  margin:0px 150px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+
+}
+
+.catos{
+    display: inline-block;
+    background: #6a478f;
+
+}
+
+.div1{
+    display: inline;
+
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+
+    position: relative;
+    background: #212121;
+    background-size: .2em 100%;
+    font: 40px Open Sans, Impact;
+    margin: 1px;
+
+}
+
+
+.text:hover {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 5s infinite linear;
+  animation: stroke 5s infinite linear;
+}
+
+.text:hover:nth-child(n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+
+
+}
+.text:nth-child(n + 2) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+}
+
+
+.div2{
+      background: hsla(0, 0%, 0%, .9); 
+      position: relative;
+      font: normal 40px Varela Round, sans-serif;
+      height: 40px;
+	   left: 0;
+	    letter-spacing: 5px;
+	    margin: 0px 0 0 0;
+      color:#ffff;
+      text-align: center;
+
+
+}
+
+.div2:hover {
+
+color: hsla(0, 0%, 0%, .9);
+  font: normal 40px Varela Round, sans-serif;  
+  
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+
+
+}
+
+.div3 {
+
+
+      background: hsla(0, 0%, 0%, .9); 
+      position: relative;
+      font: 40px "Finger Paint";
+      color:#ffff;
+      text-align: center;
+
+
+}
+
+.div3:hover {
+	background: black;
+  	overflow: hidden;
+  	color: transparent;
+  	backface-visibility: hidden;
+  	text-shadow: 0 0 0 whitesmoke;
+  	animation: smoky ease 10s infinite;
+}
+
+
+
+
+.div4 {
+      background: hsla(0, 0%, 0%, .9); 
+      position: relative;
+      font: 40px "Monserrat";
+      color:#ffff;
+      text-align: center;
+}
+
+.div4:hover{
+	animation: pulse ease 5s infinite;
+
+}
+
+.div5 {
+  background: hsla(0, 0%, 0%, .9); 
+  position: relative;
+  text-align: center;
+  color: #ffff;
+ font: 40px "";
+
+}
+.div5:hover{
+  filter: blur(20px);
+  animation: desenfoque linear 3s infinite; 
+}
+
+.div6 {
+  color: #ffff;
+ font: 40px "Roboto Condensed";
+   margin-bottom: auto;
+text-align: center;
+
+
+}
+
+.shape {
+  fill: none;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+  color: #ffff;
+  margin-bottom: auto;
+
+
+}
+
+.text6 {
+  color: #ffff;
+ font: 40px "Roboto Condensed";
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -58px;
+
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.div6:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.div7{
+  background: hsla(0, 0%, 0%, .9); 
+  position: relative;
+  font: 40px "Monserrat";
+  color:#ffff;
+  text-align: center;
+  color:#ffff;
+  font-weight:700;
+}
+.div7:hover{
+  animation:blur 2s ease-out infinite;
+  text-shadow:0px 0px 5px #ffff,
+      0px 0px 7px #ffff;
+
+}
+
+
+.div8{
+background: hsla(0, 0%, 0%, .9); 
+  position: relative;
+  font: 40px "Monserrat";
+  text-align:center;
+
+}
+
+
+.div9{
+position: relative; 
+width: 100%; 
+padding-bottom: 100%; 
+overflow: hidden; 
+}
+
+#div9 text { 
+font-family: 'Helvetica Neue', Arial; 
+font-size: 40px; 
+font-weight: bold; 
+color: #fff;
+
+}
+
+
+#div9 svg { 
+
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+    -webkit-animation-iteration-count: 5s;
+     -moz-animation-iteration-count: 5s;
+      -ms-animation-iteration-count: 5s;
+       -o-animation-iteration-count: 5s;
+          animation-iteration-count: 5s;
+  
+
+}
+
+
+
+.div10{
+font-size: 40px;
+text-align: center;
+
+}
+    .palabras-transform .palabras:hover {
+      fill: #ffffff;
+      text-shadow: 0px 0px 10px #ffff;
+      font-size: 35px;
+      position: relative;
+
+    }
+    
+    .palabras-transform .palabras {
+      fill: #ffff;  
+    }
+    
+    .palabras-transform {
+      -webkit-transform: translate(80px, 35px);
+      /* Safari */
+      transform: translate(80px, 35px);
+    }
+    
+
+    .div11{
+      color:#fff;
+      position: relative;
+      font-size: 30px;
+      text-align: center;
+
+
+
+    }
+
+
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+
+
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #ffff,
+      0px 0px 10px #ffff, 
+      0px 0px 25px #ffff,
+      0px 0px 25px #ffff,
+      0px 0px 25px #ffff,
+      0px 0px 25px #ffff,
+      0px 0px 25px #ffff,
+      0px 0px 25px #ffff,
+      0px 0px 50px #ffff,
+      0px 0px 50px #ffff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+
+
+
+
+@keyframes smoky {
+  35% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  60% {
+    opacity: 0;
+  }
+  100%{
+  	text-shadow: 0 0 0 whitesmoke;
+  	opacity: 1;
+  }
+}
+
+
+@keyframes pulse{
+  10%{
+    color: #45170A;
+    border-radius:40%;
+  }
+  30%{
+    color: #90331A;
+    opacity: .5;
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  70%{
+    border-radius: 80%;
+    color:#B34425;
+
+  }
+  100%{
+    opacity: 1;
+    color:#ffff;
+    
+  }
+}
+
+@keyframes desenfoque{
+  0%{
+    filter: blur(20px);
+  }
+  50%{
+    filter: blur(0px);
+  }
+  100%{
+    filter: blur(20px);
+  }
+}
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+
+
+
+
+
+
+}
