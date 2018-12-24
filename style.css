@@ -170,18 +170,6 @@ text-align: center;
 
 }
 
-@keyframes draw {
-  0% {
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-  }
-  100% {
-    stroke-dasharray: 800;
-    stroke-dashoffset: 0;
-    stroke-width: 2px;
-  }
-}
 
 .div6:hover .shape {
   -webkit-animation: 0.5s draw linear forwards;
@@ -260,13 +248,14 @@ color: #fff;
 }
 
 
+ .div10{
+      font-size: 40px;
+      text-align: center;
+      color: #fff;
 
-.div10{
-font-size: 40px;
-text-align: center;
+      }
 
-}
-    .palabras-transform .palabras:hover {
+.palabras-transform .palabras:hover {
       fill: #ffffff;
       text-shadow: 0px 0px 10px #ffff;
       font-size: 35px;
@@ -283,17 +272,73 @@ text-align: center;
       /* Safari */
       transform: translate(80px, 35px);
     }
-    
+
+   
 
     .div11{
       color:#fff;
-      position: relative;
+position: relative;
       font-size: 30px;
       text-align: center;
+ }
 
 
+.div12{
+      color:#fff;
+      position: relative;
+      font-size: 40px;
+      text-align: center;
+      margin: 10px;
 
+}
+
+.text-stroke {
+      fill: #fff;
+      stroke: #000;
+      stroke-width: 1.8px;
+      stroke-dashoffset: -900;
+      stroke-dasharray: 900;
+      stroke-linecap: butt;
+      stroke-linejoin: round;
+      animation: dash 1.5s ease-in-out forwards;
     }
+    .text-stroke:nth-child(2) {
+      animation-delay: .3s;
+    }
+    .text-stroke:nth-child(3) {
+      animation-delay: .9s;
+    }
+    .text-stroke-2 {
+      stroke: #f6bdfa;
+      animation-delay: 1.2s;
+    }
+    .text-stroke:nth-child(5) {
+      animation-delay: 1.5s;
+    }
+    .text-stroke:nth-child(6) {
+      animation-delay: 1.8s;
+    }
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
 
 
 
@@ -466,10 +511,6 @@ text-align: center;
   100% {
     stroke-dashoffset: -400;
   }
-
-
-
-
 
 
 }
